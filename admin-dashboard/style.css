@@ -1,0 +1,487 @@
+/* =========================
+   GLOBAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+
+    color: #111827;
+
+    background-color: #e2e8f0;
+}
+
+img {
+    width: 28px;
+}
+
+
+/* =========================
+   MAIN PAGE GRID
+   ========================= */
+
+.dashboard {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+}
+
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+.sidebar {
+    background-color: #1992d4;
+
+    color: white;
+
+    padding: 24px;
+
+    display: grid;
+
+    grid-template-rows: auto auto 1fr;
+}
+
+
+/* Branding */
+
+.branding {
+    display: grid;
+
+    grid-template-columns: 42px 1fr;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 55px;
+}
+
+.branding img {
+    width: 40px;
+
+    filter: brightness(0) invert(1);
+}
+
+.branding h1 {
+    margin: 0;
+
+    font-size: 28px;
+}
+
+
+/* Navigation */
+
+.main-nav,
+.secondary-nav {
+    display: grid;
+
+    gap: 20px;
+}
+
+.secondary-nav {
+    align-self: start;
+
+    margin-top: 60px;
+}
+
+.main-nav a,
+.secondary-nav a {
+    display: grid;
+
+    grid-template-columns: 28px 1fr;
+
+    align-items: center;
+
+    gap: 18px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+.main-nav img,
+.secondary-nav img {
+    width: 25px;
+
+    filter: brightness(0) invert(1);
+}
+
+
+/* =========================
+   RIGHT CONTENT
+   ========================= */
+
+.content {
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-rows: auto 1fr;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+    background-color: white;
+
+    padding: 22px 40px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    display: grid;
+
+    gap: 25px;
+}
+
+
+/* Header top */
+
+.header-top {
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+.search {
+    display: grid;
+
+    grid-template-columns: 30px 1fr;
+
+    align-items: center;
+
+    max-width: 700px;
+
+    gap: 10px;
+}
+
+.search img {
+    width: 25px;
+}
+
+.search input {
+    width: 100%;
+
+    border: none;
+
+    background-color: #e2e8f0;
+
+    border-radius: 30px;
+
+    padding: 10px 20px;
+
+    outline: none;
+}
+
+.user-top {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+
+    align-items: center;
+
+    gap: 18px;
+
+    font-size: 18px;
+}
+
+.icon-button {
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+}
+
+.icon-button img {
+    width: 25px;
+}
+
+
+/* Header bottom */
+
+.header-bottom {
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.welcome {
+    display: grid;
+
+    grid-template-columns: 75px 1fr;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.welcome p {
+    margin: 0 0 5px;
+
+    font-weight: 700;
+}
+
+.welcome h2 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+.header-buttons {
+    display: grid;
+
+    grid-template-columns: repeat(3, auto);
+
+    gap: 25px;
+}
+
+.header-buttons button {
+    border: none;
+
+    background-color: #1992d4;
+
+    color: white;
+
+    padding: 12px 30px;
+
+    border-radius: 25px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   AVATARS
+   ========================= */
+
+.avatar {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+}
+
+.small-avatar {
+    width: 42px;
+    height: 42px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.main {
+    padding: 30px 25px;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 3fr) minmax(260px, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   PROJECTS
+   ========================= */
+
+.section-title {
+    margin: 0 0 12px;
+
+    font-size: 20px;
+}
+
+.projects {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.project-card {
+    min-height: 220px;
+
+    background-color: white;
+
+    border-left: 8px solid #f2b01e;
+
+    border-radius: 8px;
+
+    padding: 35px 25px 25px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    display: grid;
+
+    grid-template-rows: 1fr auto;
+}
+
+.project-card h3 {
+    margin: 0 0 8px;
+
+    font-size: 18px;
+}
+
+.project-card p {
+    margin: 0;
+
+    color: #666;
+
+    line-height: 1.35;
+}
+
+.card-actions {
+    display: grid;
+
+    grid-template-columns: repeat(3, auto);
+
+    justify-content: end;
+
+    gap: 25px;
+
+    margin-top: 20px;
+}
+
+.card-actions img {
+    width: 22px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RIGHT COLUMN
+   ========================= */
+
+.right-column {
+    display: grid;
+
+    grid-template-rows: auto auto;
+
+    gap: 40px;
+}
+
+
+/* =========================
+   ANNOUNCEMENTS
+   ========================= */
+
+.announcement-card {
+    background-color: white;
+
+    border-radius: 8px;
+
+    padding: 25px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-card article {
+    padding: 5px 0 18px;
+
+    border-bottom: 1px solid #d1d5db;
+}
+
+.announcement-card article + article {
+    padding-top: 18px;
+}
+
+.announcement-card article:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.announcement-card h3 {
+    margin: 0 0 5px;
+
+    font-size: 15px;
+}
+
+.announcement-card p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.25;
+}
+
+
+/* =========================
+   TRENDING
+   ========================= */
+
+.trending-card {
+    background-color: white;
+
+    border-radius: 8px;
+
+    padding: 22px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    display: grid;
+
+    gap: 20px;
+}
+
+.trend {
+    display: grid;
+
+    grid-template-columns: 50px 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.trend img {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+}
+
+.trend strong {
+    font-size: 14px;
+}
+
+.trend p {
+    margin: 3px 0 0;
+
+    color: #666;
+
+    font-size: 13px;
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Roboto Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <!-- Branding -->
+            <div class="branding">
+                <img
+                    src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/view-dashboard.svg"
+                    alt="Dashboard"
+                >
+
+                <h1>Dashboard</h1>
+            </div>
+
+
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+
+                <a href="#">
+                    <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/home.svg" alt="">
+                    <span>Home</span>
+                </a>
+
+                <a href="#">
+                    <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/account.svg" alt="">
+                    <span>Profile</span>
+                </a>
+
+                <a href="#">
+                    <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/message.svg" alt="">
+                    <span>Messages</span>
+                </a>
+
+                <a href="#">
+                    <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/clock-outline.svg" alt="">
+                    <span>History</span>
+                </a>
+
+                <a href="#">
+                    <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/file-document.svg" alt="">
+                    <span>Tasks</span>
+                </a>
+
+                <a href="#">
+                    <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/account-group.svg" alt="">
+                    <span>Communities</span>
+                </a>
+
+            </nav>
+
+
+            <!-- Secondary Navigation -->
+            <nav class="secondary-nav">
+
+                <a href="#">
+                    <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/cog.svg" alt="">
+                    <span>Settings</span>
+                </a>
+
+                <a href="#">
+                    <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/help-box.svg" alt="">
+                    <span>Support</span>
+                </a>
+
+                <a href="#">
+                    <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/shield-check.svg" alt="">
+                    <span>Privacy</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <div class="content">
+
+            <!-- ================= HEADER ================= -->
+
+            <header class="header">
+
+                <!-- Top Row -->
+                <div class="header-top">
+
+                    <div class="search">
+
+                        <img
+                            src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/magnify.svg"
+                            alt="Search"
+                        >
+
+                        <input
+                            type="text"
+                            placeholder="Search..."
+                        >
+
+                    </div>
+
+
+                    <div class="user-top">
+
+                        <button class="icon-button">
+                            <img
+                                src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/bell-ring-outline.svg"
+                                alt="Notifications"
+                            >
+                        </button>
+
+                        <img
+                            class="avatar small-avatar"
+                            src="https://api.dicebear.com/9.x/big-smile/svg?seed=Morgan"
+                            alt="Morgan Oakley"
+                        >
+
+                        <strong>Morgan Oakley</strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bottom Row -->
+                <div class="header-bottom">
+
+                    <div class="welcome">
+
+                        <img
+                            class="avatar"
+                            src="https://api.dicebear.com/9.x/big-smile/svg?seed=Morgan"
+                            alt="Morgan Oakley"
+                        >
+
+                        <div>
+                            <p>Hi there,</p>
+                            <h2>Morgan Oakley (@morgan)</h2>
+                        </div>
+
+                    </div>
+
+
+                    <div class="header-buttons">
+
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= MAIN ================= -->
+
+            <main class="main">
+
+                <!-- PROJECTS -->
+
+                <section class="projects-section">
+
+                    <h2 class="section-title">Your Projects</h2>
+
+                    <div class="projects">
+
+                        <article class="project-card">
+
+                            <div>
+                                <h3>Super Cool Project</h3>
+
+                                <p>
+                                    Sed tempus ut lacus ut scelerisque.
+                                    Suspendisse sollicitudin nibh erat,
+                                    id facilisis felis accumsan nec.
+                                </p>
+                            </div>
+
+                            <div class="card-actions">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/star-plus-outline.svg" alt="Favorite">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/eye-plus-outline.svg" alt="View">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/source-branch.svg" alt="Share">
+                            </div>
+
+                        </article>
+
+
+                        <article class="project-card">
+
+                            <div>
+                                <h3>Less Cool Project</h3>
+
+                                <p>
+                                    Nullam condimentum ipsum ut lectus
+                                    vehicula consectetur. Quisque sed dolor
+                                    tincidunt, consectetur sapien et,
+                                    facilisis dolor.
+                                </p>
+                            </div>
+
+                            <div class="card-actions">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/star-plus-outline.svg" alt="Favorite">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/eye-plus-outline.svg" alt="View">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/source-branch.svg" alt="Share">
+                            </div>
+
+                        </article>
+
+
+                        <article class="project-card">
+
+                            <div>
+                                <h3>Impossible App</h3>
+
+                                <p>
+                                    In hac habitasse platea dictumst.
+                                    Vivamus dictum rutrum arcu, a placerat
+                                    velit sagittis id.
+                                </p>
+                            </div>
+
+                            <div class="card-actions">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/star-plus-outline.svg" alt="Favorite">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/eye-plus-outline.svg" alt="View">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/source-branch.svg" alt="Share">
+                            </div>
+
+                        </article>
+
+
+                        <article class="project-card">
+
+                            <div>
+                                <h3>Easy Peasy App</h3>
+
+                                <p>
+                                    Etiam cursus eros ac efficitur fringilla.
+                                    Vestibulum dignissim urna eget accumsan
+                                    aliquam.
+                                </p>
+                            </div>
+
+                            <div class="card-actions">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/star-plus-outline.svg" alt="Favorite">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/eye-plus-outline.svg" alt="View">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/source-branch.svg" alt="Share">
+                            </div>
+
+                        </article>
+
+
+                        <article class="project-card">
+
+                            <div>
+                                <h3>Ad Blocker</h3>
+
+                                <p>
+                                    Quisque eget rutrum nisl. Nam augue
+                                    justo, cursus vitae metus vel, pharetra
+                                    hendrerit felis.
+                                </p>
+                            </div>
+
+                            <div class="card-actions">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/star-plus-outline.svg" alt="Favorite">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/eye-plus-outline.svg" alt="View">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/source-branch.svg" alt="Share">
+                            </div>
+
+                        </article>
+
+
+                        <article class="project-card">
+
+                            <div>
+                                <h3>Money Maker</h3>
+
+                                <p>
+                                    Praesent convallis, libero quis congue
+                                    elementum, nunc ante faucibus sapien,
+                                    ac scelerisque tortor purus sit amet ex.
+                                </p>
+                            </div>
+
+                            <div class="card-actions">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/star-plus-outline.svg" alt="Favorite">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/eye-plus-outline.svg" alt="View">
+                                <img src="https://cdn.jsdelivr.net/npm/@mdi/svg/svg/source-branch.svg" alt="Share">
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RIGHT COLUMN -->
+
+                <aside class="right-column">
+
+                    <!-- ANNOUNCEMENTS -->
+
+                    <section class="announcements-section">
+
+                        <h2 class="section-title">Announcements</h2>
+
+                        <div class="announcement-card">
+
+                            <article>
+                                <h3>Site Maintenance</h3>
+                                <p>
+                                    Vestibulum condimentum tellus lacus,
+                                    in accumsan elit maximus ac.
+                                </p>
+                            </article>
+
+                            <article>
+                                <h3>Community Share Day</h3>
+                                <p>
+                                    Nam vel lectus tincidunt, rutrum nulla
+                                    eu, ornare libero.
+                                </p>
+                            </article>
+
+                            <article>
+                                <h3>Updated Privacy Policy</h3>
+                                <p>
+                                    Phasellus efficitur nisi eget elit
+                                    consectetur.
+                                </p>
+                            </article>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- TRENDING -->
+
+                    <section class="trending-section">
+
+                        <h2 class="section-title">Trending</h2>
+
+                        <div class="trending-card">
+
+                            <article class="trend">
+
+                                <img
+                                    src="https://api.dicebear.com/9.x/big-smile/svg?seed=Tegan"
+                                    alt="@tegan"
+                                >
+
+                                <div>
+                                    <strong>@tegan</strong>
+                                    <p>World Peace Builder</p>
+                                </div>
+
+                            </article>
+
+
+                            <article class="trend">
+
+                                <img
+                                    src="https://api.dicebear.com/9.x/big-smile/svg?seed=Morgan"
+                                    alt="@morgan"
+                                >
+
+                                <div>
+                                    <strong>@morgan</strong>
+                                    <p>Super Cool Project</p>
+                                </div>
+
+                            </article>
+
+
+                            <article class="trend">
+
+                                <img
+                                    src="https://api.dicebear.com/9.x/big-smile/svg?seed=Kendall"
+                                    alt="@kendall"
+                                >
+
+                                <div>
+                                    <strong>@kendall</strong>
+                                    <p>Life Changing App</p>
+                                </div>
+
+                            </article>
+
+
+                            <article class="trend">
+
+                                <img
+                                    src="https://api.dicebear.com/9.x/big-smile/svg?seed=Alex"
+                                    alt="@alex"
+                                >
+
+                                <div>
+                                    <strong>@alex</strong>
+                                    <p>No Traffic Maker</p>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </aside>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
